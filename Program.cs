@@ -4,6 +4,8 @@ Console.WriteLine("Введите массив");
 string[] array1 = CreateArray(arrayLength);
 string[] array2 = new string[array1.Length];
 CheckArray(array1, array2);
+Console.WriteLine();
+PrintArray(array2);
 
 
 
@@ -33,4 +35,14 @@ string[] CheckArray(string[] array1, string[] array2)
         }
     }
     return array2;
+}
+
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
 }
